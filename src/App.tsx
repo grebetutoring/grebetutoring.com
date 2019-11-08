@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Carousel from "react-bootstrap/Carousel";
-import "holderjs";
 import "./App.css";
+
+import { PlaceholderImage, RGBColor } from "./placeholder-image";
 
 const AppNavbar: React.FC = () => {
   return (
@@ -26,10 +27,14 @@ const AppHome: React.FC = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
+        <PlaceholderImage
+          width={400}
+          height={200}
+          bg={new RGBColor(0.25, 0.25, 0.25)}
+          auto="yes"
           className="d-block w-100"
-          src="holder.js/1920x1200?text=First slide&bg=373940"
-          alt="First slide"
+          text="First Slide"
+          alt="First Slide"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -37,24 +42,30 @@ const AppHome: React.FC = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <PlaceholderImage
+          width={400}
+          height={200}
+          bg={new RGBColor(0.5, 0.5, 0.5)}
+          auto="yes"
           className="d-block w-100"
-          src="holder.js/1920x1200?text=Second slide&bg=282c34"
-          alt="Third slide"
+          text="Second Slide"
+          alt="Second Slide"
         />
-
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <PlaceholderImage
+          width={400}
+          height={200}
+          bg={new RGBColor(0.33, 0.33, 0.33)}
+          auto="yes"
           className="d-block w-100"
-          src="holder.js/1920x1200?text=Third slide&bg=20232a"
-          alt="Third slide"
+          text="Third Slide"
+          alt="Third Slide"
         />
-
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
