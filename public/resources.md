@@ -42,7 +42,7 @@ Math Blog that's sometimes storytelling, sometimes thought experiment, always an
 
 #### https://dragonbox.com/
 
-Despite these being "paid" apps, Dragon Box is one of the best, most engaging math games I've seen, and it really does build algebraic thinking! Their other apps are interesting, particularly "Numbers."
+I am usually hesitant to recommend paid apps, but Dragon Box is one of the best, most engaging math games I've seen, and it really does build algebraic thinking! Their other apps are interesting, particularly "Numbers."
 
 ### Exploding Dots
 
