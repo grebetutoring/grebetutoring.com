@@ -22,9 +22,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: darkblue;
+  color: rgb(0, 95, 139);
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #004ba0;
 }
