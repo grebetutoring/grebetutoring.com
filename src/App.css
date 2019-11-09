@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.App-gutter:empty {
+  content: "&nbsp";
+}
+
+.App-Resources {
+  text-align: left;
+}
+
 .App-logo {
   height: 40vmin;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
+import "./App.css"
+
 function staticAssetUri(uri: string) {
   return uri.startsWith("http") ? uri : process.env.PUBLIC_URL + uri;
 }
