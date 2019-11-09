@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "title": "",
+      "links": [
+        {
+          "title": "Desmos",
+          "url": "https://www.desmos.com/",
+          "description": "The best FREE graphing calculator, and you can do so much more than just graph lines!"
+        },
+        {
+          "title": "Mathigon",
+          "url": "https://mathigon.org/courses",
+          "description": " Free, Interactive Reference - Still under development, but explore what's there! You might find a new way to think about things!"
+        },
+        {
+          "title": "Official SAT Practice Tests",
+          "url": "https://www.khanacademy.org/test-prep/sat/full-length-sat-1#paper-sat-tests",
+          "description": "Take them on paper (remember to time yourself!) and score them online! Free!"
+        },
+        {
+          "title": "Tips for Understanding the PSAT",
+          "url": "https://www.khanacademy.org/test-prep/sat/full-length-sat-1/paper-sat-tests/a/full-length-psat-nmsqt",
+          "description": ""
+        },
+        {
+          "title": "Transum",
+          "url": "https://www.transum.org/",
+          "description": " I recommend Maths Map, Go Maths, and Games for Algebra and Geometry students. Times Tables are great for younger students, but Puzzles and Investigations are for everyone! Take a look around!"
+        },
+        {
+          "title": "Better Explained",
+          "url": "https://betterexplained.com/archives/",
+          "description": " Math Blog that's sometimes storytelling, sometimes thought experiment, always an interesting perspective"
+        },
+        {
+          "title": "Dragon Box",
+          "url": "https://dragonbox.com/",
+          "description": "Despite these being \"paid\" apps, Dragon Box is one of the best, most engaging math games I've seen - and it really does build algebraic thinking! Their other apps are interesting, particularly \"Numbers.\""
+        },
+        {
+          "title": "Exploding Dots",
+          "url": "https://www.explodingdots.org/g/cold-fly-7",
+          "description": " Explore math concepts at your level, at your pace, in an exciting, competitive environment"
+        },
+        {
+          "title": "Matific",
+          "url": "https://www.marketing.matific.com/global-maths-project",
+          "description": " Pre-ExplodingDots for younger students"
+        },
+        {
+          "title": "Calculation Nation",
+          "url": "https://calculationnation.nctm.org/",
+          "description": "Games with achievements and leader boards to practice fundamental math concepts"
+        }
+      ]
+    }
+  ]
+}
