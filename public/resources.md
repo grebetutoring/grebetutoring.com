@@ -24,7 +24,7 @@ Take them on paper (remember to time yourself!) and score them online! Free!
 
 #### https://www.khanacademy.org/test-prep/sat/full-length-sat-1/paper-sat-tests/a/full-length-psat-nmsqt
 
---- NEEDS DESCRIPTION ---
+The PSAT is now so similar to the SAT in terms of format and style that any practice you do to prepare for the SAT will benefit your performance on the PSAT -- and vice versa! The biggest difference is that there are scaled-down versions of the PSAT aimed at different grade levels.
 
 ### Transum
 
