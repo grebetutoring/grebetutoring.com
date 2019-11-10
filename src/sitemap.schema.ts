@@ -1,6 +1,6 @@
 export interface Sitemap {
-  readonly $schema?: "./sitemap.schema.json";
-  readonly version: "1.0.0";
+  readonly $schema?: "./sitemap.schema.json" | string;
+  readonly version: "1.0.0" | string;
   readonly navIcon: NavIcon;
   readonly homepage: PageRef;
   readonly pages: PageRef[];
