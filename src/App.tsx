@@ -24,14 +24,8 @@ const AppNavbar: React.FC = () => {
 
 const Resources: React.FC = () => {
   return (
-    <Container className="App-Resources">
-      <Row>
-        <Col className="App-gutter" />
-        <Col xl={10}>
-          <MarkdownFile src={"resources.md"} />;
-        </Col>
-        <Col className="App-gutter" />
-      </Row>
+    <Container className="App-resources">
+      <MarkdownFile src={"resources.md"} />;
     </Container>
   );
 };
@@ -43,17 +37,30 @@ const Home: React.FC = () => {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <AppNavbar />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/resources">
-            <Resources />
-          </Route>
-        </Switch>
-      </Router>
+      <div className="App-background" />
+      <div className="App-header">
+        <AppNavbar />
+      </div>
+      <div className="App-content">
+        <Router>
+          <Switch>
+            {/* The Home route does not get the column layout */}
+            <Route exact path="/">
+              <Home />
+            </Route>
+            {/* All other pages get the watermarked column format */}
+            <Row>
+              <Col xs={1} className="App-gutter" />
+              <Col xl={9}>
+                <Route path="/resources">
+                  <Resources />
+                </Route>
+              </Col>
+              <Col xs={2} className="App-gutter App-watermark" />
+            </Row>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 };

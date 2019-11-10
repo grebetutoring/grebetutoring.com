@@ -1,4 +1,3 @@
-background-image: url(background.png)
 # Welcome to Grebe Tutoring
 ## Math + Writing + Reading + Organization
 ### From Arithmetic to Calculus + From Basic Essays to College Applications + From Study Skills to Test-Taking Strategies
