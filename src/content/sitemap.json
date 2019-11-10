@@ -13,7 +13,7 @@
   "pages": [
     {
       "name": "Resources",
-      "target": "/resources",
+      "target": "/#resources",
       "markdown": "resources.md"
     }
   ]
