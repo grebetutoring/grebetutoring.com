@@ -1,4 +1,4 @@
-![md-logo](logo_noshadow.png)
+![logo](logo_noshadow.png)
 
 # Welcome to Grebe Tutoring
 

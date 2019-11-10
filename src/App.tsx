@@ -2,7 +2,8 @@ import React from "react";
 import { AppNavbar } from "./app-navbar";
 import { AppContentRouter } from "./app-content-router";
 import "./App.css";
-import sitemap from "./sitemap.json";
+import "./content/images.tsx";
+import sitemap from "./content/sitemap.json";
 
 const App: React.FC = () => {
   return (

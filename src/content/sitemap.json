@@ -1,5 +1,5 @@
 {
-  "$schema": "./sitemap.schema.json",
+  "$schema": "../sitemap.schema.json",
   "version": "1.0.0",
   "navIcon": {
     "src": "logo_noshadow.png",

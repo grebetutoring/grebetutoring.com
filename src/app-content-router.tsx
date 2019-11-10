@@ -12,7 +12,7 @@ export const AppContentRouter: React.FC<Sitemap> = props => {
           <AppHomepage src={homepage.markdown || ""} />
         </Route>
         {pages.map(page => (
-          <Route path={page.target}>
+          <Route key={`route:${page.target}`} path={page.target}>
             <AppPage src={page.markdown || ""} />
           </Route>
         ))}

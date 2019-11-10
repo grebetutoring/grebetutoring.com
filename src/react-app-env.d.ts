@@ -13,6 +13,11 @@ declare module "react-katex" {
   export default ReactKatex;
 }
 
+declare module "*.md" {
+  const file: string;
+  export default file;
+}
+
 declare module "holderjs" {
   import { Color } from "csstype";
 

@@ -6,9 +6,6 @@
       "additionalProperties": false,
       "properties": {
         "$schema": {
-          "enum": [
-            "./sitemap.schema.json"
-          ],
           "type": "string"
         },
         "homepage": {

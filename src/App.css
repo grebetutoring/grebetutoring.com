@@ -104,7 +104,7 @@ img {
 }
 
 .App-watermark::before {
-  background-image: url("./logo_withshadow.png");
+  background-image: url("./content/logo_withshadow.png");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 20vmax;
