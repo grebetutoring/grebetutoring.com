@@ -12,8 +12,8 @@
 
 ---
 
-To schedule your one-on-one tutoring session, get in touch with me at [info@grebetutoring.com](mailto:info@grebetutoring.com)
+To schedule your one-on-one tutoring session, get in touch with me at [info@grebetutoring.com](mailto:info@grebetutoring.com).
 
 ---
 
-### $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+You can also call or text to [407-270-2287](tel:407-270-2287)

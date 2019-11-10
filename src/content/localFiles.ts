@@ -1,9 +1,12 @@
-import * as logo_noshadow_png from "./logo_noshadow.png";
-import * as logo_withshadow_png from "./logo_withshadow.png";
 import * as main_md from "./main.md";
 import * as resources_md from "./resources.md";
+import * as footer_md from "./footer.md";
 
-const files: any = { main_md, resources_md, logo_noshadow_png, logo_withshadow_png };
+const files: any = {
+  main_md,
+  resources_md,
+  footer_md
+};
 
 function getFile(url: string) {
   if (url.startsWith("http")) {

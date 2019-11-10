@@ -21,7 +21,7 @@ p {
   align-items: center;
   text-align: center;
   align-content: center;
-  background-color: white;
+  overflow: hidden;
 }
 
 .App-header {
@@ -29,6 +29,59 @@ p {
   top: 0;
   z-index: 200;
   width: 100vw;
+}
+
+.App-footer {
+  position: relative;
+  bottom: 0;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+  color: lightgrey;
+  font-size: x-small;
+  width: 100%;
+}
+
+.App-footer p {
+  font-size: calc(10pt + 1vmin);
+}
+
+.App-copyright {
+  margin: auto;
+  text-align: justify;
+  text-align-last: center;
+  max-width: 80vw;
+}
+
+.App-footer-song {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  max-width: 90vw;
+}
+
+.App-footer-song-middle {
+  padding: 0;
+  padding-top: 1rem;
+  text-align: justify;
+  text-align-last: center;
+  max-width: 30rem;
+}
+
+.App-footer-song-buffer-left, .App-footer-song-buffer-right {
+  padding: 0;
+  vertical-align: bottom;
+  font-size: 10vmin;
+}
+
+.App-footer-song-buffer-left {
+  text-align: end;
+}
+
+.App-footer-song-buffer-right {
+  text-align: start;
 }
 
 .navbar {
@@ -48,6 +101,8 @@ p {
   background-position-y: bottom;
   bottom: 0;
   left: 0;
+  right: 0;
+  top: 0;
   z-index: -10;
   height: 100vh;
   width: 100%;
@@ -56,12 +111,10 @@ p {
 .App-content {
   position: absolute;
   top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  color: rgb(0, 95, 139);
+  background: rgba(0, 0, 0, 0);
   overflow-y: auto;
   overflow-x: hidden;
-  color: rgb(0, 95, 139);
 }
 
 .App-content-inner {
@@ -81,12 +134,22 @@ p {
 }
 
 img {
-  max-width: 90vw;
+  max-width: 100%;
 }
 
 /* Note: Collapse watermark when scaled in */
 @media all and (max-width: 62rem) {
-  .App-gutter {
+  .App-gutter{
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
+@media all and (max-width: 50rem) {
+  .App-footer-song-buffer-left, .App-footer-song-buffer-right {
     display: none;
     width: 0;
     height: 0;
@@ -108,7 +171,7 @@ img {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 20vmax;
-  right: 1rem;
+  right: 0rem;
   top: 0rem;
   content: "";
   position: fixed;

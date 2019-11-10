@@ -12,7 +12,7 @@
   },
   "pages": [
     {
-      "name": "Student & Parent Resources",
+      "name": "Resources",
       "target": "/resources",
       "markdown": "resources.md"
     }

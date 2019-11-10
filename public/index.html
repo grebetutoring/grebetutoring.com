@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="Grebe Tutoring" content="grebetutoring.com - powered by React" />
+  <link rel="manifest" href="%PUBLIC_URL%/manfest.json" />
+  <title>Grebe Tutoring</title>
+</head>
+
+<body>
+  <noscript>
+    <div className="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div className="item"
+        style="flex-shrink: 1; min-width: 40vmin; max-width: 80vmin; min-height: 30vmin; max-height: 50vmin; background-repeat: no-repeat; background-image: url('%PUBLIC_URL%/logo_withshadow.png'); background-size: contain; background-position: center; padding: 0;">
+        &nbsp;
+      </div>
+      <div className="item" style="text-align: center; max-width: 40em; right: 0;">
+        <h1>
+          Welcome to Grebe Tutoring
+        </h1>
+        <h2>
+          To schedule your one-on-one tutoring session, get in touch with me at
+          <a href="mailto:info@grebetutoring.com">info@grebetutoring.com</a>
+          <br />
+          <br />
+          You can also call or text to <a href="tel:407-270-2287">407-270-2287</a>
+        </h2>
+        <p>
+          This website is powered by <a href="https://reactjs.org">React</a> and
+          better viewed with javascript.
+        </p>
+        <p>
+          Copyright &copy; 2019 Grebe Tutoring. All Rights Reserved.
+          <br />
+          For more information or issue with this site please contact us&nbsp;
+          <a href="mailto:webmaster@grebetutoring.com">here</a>.
+        </p>
+      </div>
+    </div>
+  </noscript>
+  <div id="root"></div>
+</body>
+
 </html>

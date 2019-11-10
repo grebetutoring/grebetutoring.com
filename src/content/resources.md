@@ -1,4 +1,4 @@
-# Top Resources For Students
+# Resources For Students
 
 ---
 
@@ -42,7 +42,8 @@ Pre-ExplodingDots for younger students
 
 Games with achievements and leader boards to practice fundamental math concepts
 
-# More For Students and Parents, too
+
+# More For Students and Parents
 
 ---
 
