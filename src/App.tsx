@@ -1,33 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AppHomepage, AppPage } from "./app-page";
 import { AppNavbar } from "./app-navbar";
+import { AppContentRouter } from "./app-content-router";
 import "./App.css";
-
-const AppContentRouter: React.FC = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <AppHomepage src="main.md" />
-        </Route>
-        <Route path="/resources">
-          <AppPage src="resources.md" />
-        </Route>
-      </Switch>
-    </Router>
-  );
-};
+import sitemap from "./sitemap.json";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <div className="App-background" />
       <div className="App-header">
-        <AppNavbar />
+        <AppNavbar {...sitemap} />
       </div>
       <div className="App-content">
-        <AppContentRouter />
+        <AppContentRouter {...sitemap} />
       </div>
     </div>
   );

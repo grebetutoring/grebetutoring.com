@@ -1,7 +1,7 @@
-import "katex/dist/katex.min.css";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import RemarkMathPlugin from "remark-math";
+import "katex/dist/katex.min.css";
 import { BlockMath, InlineMath } from "react-katex";
 
 function staticAssetUri(uri: string) {
@@ -18,7 +18,7 @@ export interface MarkdownFileState {
 }
 
 export class MarkdownFile extends React.Component<MarkdownFileProps> {
-  state: MarkdownFileState = { src: "" };
+  readonly state: MarkdownFileState = { src: "" };
 
   async loadMarkdown(src: string) {
     this.setState({ src });

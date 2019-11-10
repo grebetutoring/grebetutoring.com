@@ -1,0 +1,20 @@
+{
+  "$schema": "./sitemap.schema.json",
+  "version": "1.0.0",
+  "navIcon": {
+    "src": "logo_noshadow.png",
+    "alt": "Grebe Tutoring"
+  },
+  "homepage": {
+    "name": "Home",
+    "target": "/",
+    "markdown": "main.md"
+  },
+  "pages": [
+    {
+      "name": "Student & Parent Resources",
+      "target": "/resources",
+      "markdown": "resources.md"
+    }
+  ]
+}
