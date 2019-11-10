@@ -49,5 +49,6 @@
     "quicktype": "^15.0.207",
     "raw-loader": "^3.1.0",
     "ts-json-schema-generator": "^0.56.0"
-  }
+  },
+  "homepage": "."
 }
