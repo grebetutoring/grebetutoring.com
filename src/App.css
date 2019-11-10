@@ -1,30 +1,96 @@
 .App {
+  z-index: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  align-content: center;
+  background-color: white;
+}
+
+.App-background {
+  position: fixed;
+  background-image: linear-gradient(
+      0.1turn,
+      rgba(0, 183, 236, 1) 40%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(
+      0.08turn,
+      rgba(0, 228, 213, 1) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  height: 100vh;
+  width: 100%;
+}
+
+.App-watermark {
+  position: sticky;
+  background-image: url("./Logo_color.jpg");
+  background-repeat: no-repeat;
+  background-size: 108% auto;
+  background-position-x: right;
+  z-index: -1;
+  top: -2rem;
+  right: 0rem;
+  height: 100vh;
+  max-width: 1000px;
+  min-width: 200px;
+}
+
+.App-watermark:empty {
+  content: "&nbsp";
 }
 
 .App-gutter:empty {
   content: "&nbsp";
 }
 
-.App-Resources {
+.App-resources {
   text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.App-content {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 95, 139);
 }
 
+.App-header {
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100vw;
+}
+
+.navbar {
+  height: 3rem;
+}
+
 .App-link {
   color: #004ba0;
+}
+
+/* Note: Collapse watermark when scaled in */
+@media all and (max-width: 75rem) {
+  .App-watermark {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
 }
