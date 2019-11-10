@@ -2,7 +2,7 @@ import React from "react";
 import { AppNavbar } from "./app-navbar";
 import { AppContentRouter } from "./app-content-router";
 import "./App.css";
-import "./content/images.tsx";
+import "./content/localFiles.ts";
 import sitemap from "./content/sitemap.json";
 
 const App: React.FC = () => {

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Sitemap } from "./sitemap.schema";
-import { transformImageUri } from "./markdown-file";
+import { getFile } from "./content/localFiles";
 
 export const AppNavbar: React.FC<Sitemap> = props => {
   const { navIcon, homepage, pages = [] } = props;
@@ -11,11 +11,7 @@ export const AppNavbar: React.FC<Sitemap> = props => {
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href={homepage.target}>
-        <img
-          src={transformImageUri(navIcon.src)}
-          height="75"
-          alt={navIcon.alt}
-        />
+        <img src={getFile(navIcon.src)} height="75" alt={navIcon.alt} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
