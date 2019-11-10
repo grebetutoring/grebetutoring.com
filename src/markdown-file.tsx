@@ -1,7 +1,8 @@
+import "katex/dist/katex.min.css";
 import React from "react";
 import ReactMarkdown from "react-markdown";
-
-import "./App.css"
+import RemarkMathPlugin from "remark-math";
+import { BlockMath, InlineMath } from "react-katex";
 
 function staticAssetUri(uri: string) {
   return uri.startsWith("http") ? uri : process.env.PUBLIC_URL + uri;
@@ -39,7 +40,19 @@ export class MarkdownFile extends React.Component<MarkdownFileProps> {
     }
 
     return (
-      <ReactMarkdown source={markdown} transformImageUri={staticAssetUri} />
+      <ReactMarkdown
+        source={markdown}
+        plugins={[RemarkMathPlugin]}
+        renderers={{
+          math: (props: { value: string }) => (
+            <BlockMath>{props.value}</BlockMath>
+          ),
+          inlineMath: (props: { value: string }) => (
+            <InlineMath>{props.value}</InlineMath>
+          )
+        }}
+        transformImageUri={staticAssetUri}
+      />
     );
   }
 }

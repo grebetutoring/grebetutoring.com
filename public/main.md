@@ -1,6 +1,19 @@
+![md-logo](logo_noshadow.png)
+
 # Welcome to Grebe Tutoring
+
+---
+
 ## Math + Writing + Reading + Organization
-#### From Arithmetic to Calculus + From Basic Essays to College Applications + From Study Skills to Test-Taking Strategies
-![Grebe Tutoring](Logo_color.jpg)
+
+---
+
+### From Arithmetic to Calculus + From Basic Essays to College Applications + From Study Skills to Test-Taking Strategies
+
+---
 
 To schedule your one-on-one tutoring session, get in touch with me at [info@grebetutoring.com](mailto:info@grebetutoring.com)
+
+---
+
+### $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$

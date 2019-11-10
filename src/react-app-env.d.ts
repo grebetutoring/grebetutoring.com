@@ -1,8 +1,16 @@
 /// <reference types="react-scripts" />
 
-declare module "*.md" {
-  const content: any;
-  export default content;
+declare module "remark-math" {
+  const plugin: any;
+  export default plugin;
+}
+
+declare module "react-katex" {
+  const BlockMath: any;
+  const InlineMath: any;
+  const ReactKatex: any;
+  export { BlockMath, InlineMath };
+  export default ReactKatex;
 }
 
 declare module "holderjs" {

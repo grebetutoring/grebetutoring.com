@@ -1,72 +1,27 @@
+h1 {
+  font-size: calc(36pt + 2vmin);
+  font-weight: bold;
+}
+h2 {
+  font-size: calc(24pt + 2vmin);
+}
+h3 {
+  font-size: calc(18pt + 2vmin);
+}
+h4 {
+  font-size: calc(14pt + 2vmin);
+}
+p {
+  font-size: calc(10pt + 2vmin);
+}
+
 .App {
   z-index: auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   align-content: center;
   background-color: white;
-}
-
-.App-background {
-  position: fixed;
-  background-image: linear-gradient(
-      0.1turn,
-      rgba(0, 183, 236, 1) 40%,
-      rgba(255, 255, 255, 0) 40%
-    ),
-    linear-gradient(
-      0.08turn,
-      rgba(0, 228, 213, 1) 50%,
-      rgba(255, 255, 255, 0) 50%
-    );
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  bottom: 0;
-  left: 0;
-  z-index: -10;
-  height: 100vh;
-  width: 100%;
-}
-
-.App-watermark {
-  position: sticky;
-  background-image: url("./Logo_color.jpg");
-  background-repeat: no-repeat;
-  background-size: 108% auto;
-  background-position-x: right;
-  z-index: -1;
-  top: -2rem;
-  right: 0rem;
-  height: 100vh;
-  max-width: 1000px;
-  min-width: 200px;
-}
-
-.App-watermark:empty {
-  content: "&nbsp";
-}
-
-.App-gutter:empty {
-  content: "&nbsp";
-}
-
-.App-resources {
-  text-align: left;
-}
-
-.App-content {
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 95, 139);
 }
 
 .App-header {
@@ -80,17 +35,88 @@
   height: 3rem;
 }
 
+.App-background {
+  position: fixed;
+  background-image: linear-gradient(
+      30deg,
+      rgba(0, 183, 236, 1) 40%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(20deg, rgba(0, 228, 213, 1) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  height: 100vh;
+  width: 100%;
+}
+
+.App-content {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: rgb(0, 95, 139);
+}
+
+.App-content-inner {
+  padding: 2rem;
+}
+
+.App-homepage {
+  text-align: center;
+}
+
+.App-page {
+  text-align: left;
+}
+
 .App-link {
   color: #004ba0;
 }
 
+img {
+  max-width: 90vw;
+}
+
 /* Note: Collapse watermark when scaled in */
-@media all and (max-width: 75rem) {
-  .App-watermark {
+@media all and (max-width: 62rem) {
+  .App-gutter {
     display: none;
     width: 0;
     height: 0;
     opacity: 0;
     visibility: collapse;
   }
+}
+
+.App-gutter {
+  position: sticky;
+}
+
+.App-watermark:empty::before {
+  content: "\00a0";
+}
+
+.App-watermark::before {
+  background-image: url("./logo_withshadow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 20vmax;
+  right: 1rem;
+  top: 0rem;
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+
+.App-watermark:empty::before {
+  content: "\00a0";
 }
