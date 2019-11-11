@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { AppHomepage, AppPage } from "./app-page";
 import { Sitemap } from "./sitemap.schema";
 
-export const AppContentRouter: React.FC<Sitemap> = props => {
+export const AppContentSwitch: React.FC<Sitemap> = props => {
   const { homepage, pages = [] } = props;
   return (
     <Switch>

@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { LinkContainer } from "react-router-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Sitemap } from "./sitemap.schema";
@@ -18,9 +19,9 @@ export const AppNavbar: React.FC<Sitemap> = props => {
         <Nav className="mr-auto">
           <Nav.Link href={homepage.target}>{homepage.name}</Nav.Link>
           {pages.map(page => (
-            <Nav.Link key={`navbar:${page.target}`} href={page.target}>
-              {page.name}
-            </Nav.Link>
+            <LinkContainer to={page.target}>
+              <Nav.Link>{page.name}</Nav.Link>
+            </LinkContainer>
           ))}
         </Nav>
       </Navbar.Collapse>
