@@ -13,9 +13,11 @@ declare var Pace: any;
 Pace.on("start", () => {
   $(".App-content").fadeTo(0, 0);
   $(".App-footer").fadeTo(0, 0);
+  $(".App-copyright").fadeTo(0, 0);
   Pace.once("done", () => {
     $(".App-content").fadeTo("fast", 1);
     $(".App-footer").fadeTo("fast", 1);
+    $(".App-copyright").fadeTo("fast", 1);
   });
 });
 
