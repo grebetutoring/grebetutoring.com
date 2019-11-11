@@ -6,17 +6,15 @@ import { Sitemap } from "./sitemap.schema";
 export const AppContentRouter: React.FC<Sitemap> = props => {
   const { homepage, pages = [] } = props;
   return (
-    <Router>
-      <Switch>
-        <Route exact path={homepage.target}>
-          <AppHomepage src={homepage.markdown || ""} />
+    <Switch>
+      {pages.map(page => (
+        <Route path={page.target}>
+          <AppPage key={`route:${page.target}`} src={page.markdown || ""} />
         </Route>
-        {pages.map(page => (
-          <Route key={`route:${page.target}`} path={page.target}>
-            <AppPage src={page.markdown || ""} />
-          </Route>
-        ))}
-      </Switch>
-    </Router>
+      ))}
+      <Route path={"/"}>
+        <AppHomepage src={homepage.markdown || ""} />
+      </Route>
+    </Switch>
   );
 };
